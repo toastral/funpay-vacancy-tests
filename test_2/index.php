@@ -18,12 +18,14 @@
 <script type="text/javascript">
 jQuery(function($){
     $('#form1 button[name=push]').on('click', function(){
+        $(".modal-body").html( '<img src="load.gif">' );
         var url = $('#form1 input[name=url]').val();
         magic_function(url);
 
         return false;
     });
     $('#form2 button[name=push]').on('click', function(){
+        $(".modal-body").html( '<img src="load.gif">' );
         var url = $('#form2 input[name=url]').val();
         magic_function(url);
 
@@ -31,6 +33,7 @@ jQuery(function($){
     });
 
     $('#form3 button[name=push]').on('click', function(){
+        $(".modal-body").html( '<img src="load.gif">' );
         var url = $('#form3 input[name=url]').val();
         magic_function(url);
 
@@ -72,7 +75,7 @@ jQuery(function($){
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

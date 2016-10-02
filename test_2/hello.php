@@ -1,3 +1,4 @@
+<?php sleep(1); ?>
 <div style="color:blue">
 Hello sweet pie<br />
 I'm really glad that you could make it<br />

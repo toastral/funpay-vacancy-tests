@@ -1,13 +1,12 @@
 function magic_function(url){
     $('#myModal').modal('show');
-    $(".modal-body").empty();
     $.ajax({
             url: url,
-            cache: false
+            cache: false,
         })
         .done(function( html ) {
-            $(".modal-body").append( html );
+            $(".modal-body").html( html );
         }).fail(function(jqxhr, status, errorMsg) {
-            $(".modal-body").append( '<h1>'+ errorMsg + '</h1>' );
+            $(".modal-body").html( '<h1>'+ errorMsg + '</h1>' );
     });
 }
